@@ -33,6 +33,7 @@ public class Memoizer<A, V> implements Computable<A, V> {
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
+            cache.remove(arg);
             e.printStackTrace();
         }
         return v;

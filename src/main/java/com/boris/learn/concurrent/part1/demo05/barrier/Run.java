@@ -14,5 +14,6 @@ public class Run {
         executorService.execute(cycWork);
         executorService.execute(cycWork1);
         executorService.execute(cycWork2);
+        executorService.shutdown();
     }
 }
